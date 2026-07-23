@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
 	
     linux.vm.provider "virtualbox" do |vb|
       vb.name = "LabSOC_Linux"
-      vb.memory = "4096"
+      vb.memory = "2048"
       vb.cpus = 2
 	  vb.gui = true
 	  vb.customize [ "modifyvm", :id, "--uart1", "off" ]
